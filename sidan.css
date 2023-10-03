@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* återställer marginaler och sätter border-box istället för content-box*/
+
+body {
+    background-image: url("background.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 70px 60px;
+}
+
+header {
+    @font-family: "Bungee Shade";
+    font-size: 60px;
+    justify-content: center;
+    color: white;
+    padding-top: 20px;
+    margin: 10px;
+
+}
+
+nav {
+    display: flex;
+    gap: 3px;
+    padding: 70px 10px;
+}
+
+nav a {
+    background-color: rgba(247, 247, 247, 0.7);
+
+
+    color: rgb(0, 0, 0);
+    font-family: Helvetica;
+    font-size: 30px;
+    text-decoration: none;
+
+    border-radius: 10px;
+    padding: 10px;
+    height: 70px;
+
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav a:hover {
+    background-color: rgb(52, 52, 52);
+    color: white;
+    opacity: 0, 6%;
+    border: 1px solid white;
+    font-style: bold;
+}
+
+.head-container {
+    background-color: rgba(52, 52, 52, 0.4);
+
+    min-width: 800px;
+
+    border-radius: 15px;
+
+
+    margin: 40px 30px;
+    padding: 10px;
+
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.main-containers {
+    background-color: rgba(52, 52, 52, 0.6);
+    opacity: 0, 6;
+    min-width: 800px;
+
+    border-radius: 15px;
+    border: 1px solid white;
+    color: white;
+
+
+    margin: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+content {
+    display: flex;
+    flex-direction: column;
+    /* så att texten inte hamnar i en rad */
+
+    flex-grow: 1;
+
+}
